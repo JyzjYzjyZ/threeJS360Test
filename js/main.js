@@ -17,8 +17,8 @@ var camera,
         onMouseDownMouseY = 0,
         onMouseDownLon = 0,
         onMouseDownLat = 0,
-        width = 1440, // int || window.innerWidth
-        height = 650, // int || window.innerHeight
+        width = window.innerWidth, // int || window.innerWidth
+        height = window.innerHeight, // int || window.innerHeight
         ratio = width / height;
 var texture = THREE.ImageUtils.loadTexture('img/spherical_texture.jpg', new THREE.UVMapping(), function() {
     init();
@@ -102,3 +102,23 @@ function render() {
     camera.lookAt(scene.position);
     renderer.render(scene, camera);
 }
+//my code
+window.onresize = function() {
+    var window_width = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
+    if(window_width < 1000) {
+        // 部分浏览器需要延迟
+        setTimeout(function() {
+            // 窗口最大化
+            window.resizeTo(screen.width, screen.height);
+            // 窗口移动至 top=0, left=0
+            window.moveTo(0, 0);
+        }, 100);
+    }
+    //mine
+    width = window.innerWidth, // int || window.innerWidth
+        height = window.innerHeight, // int || window.innerHeight
+        ratio = width / height;
+};
