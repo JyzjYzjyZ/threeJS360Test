@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="htmlBody">
+<html lang="zh" class="htmlBody">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>GoodJin5's 360View Web</title>
     <link href="./css/style1.css" type="text/css" rel="stylesheet">
     <script src="./js/three.min.js"></script>
-    <script src="./js/3.js"></script>
+    <script src="./js/5.js"></script>
 </head>
 
 
@@ -15,9 +15,9 @@
 
 <div id="homPageMainView" class="view"></div>
 <div class="textP">
-    <h2>这里是简介</h2>
+    <h2 class="h2">这里是简介</h2>
     <p>
-        <br/>一些东西........<br/>emmm,我想这可能是介绍
+        <p>一些东西........<br/>emmm,我想这可能是介绍</p>
     </p>
 </div>
 <div class="content" id="fold">
@@ -37,7 +37,8 @@
 
     <div class="foldContent" id="foldContentRight" >
         3<br/>
-        <div  id="foldViewRight" class="foldView, view"></div>
+        <div  id="foldViewRight" class="foldView, view">
+        </div>
     </div>
 </div>
 
@@ -53,20 +54,20 @@
 
 
 <div  class="textP">
-    <h2>分隔符</h2>
-    <br/>一些东西........<br/>emmm,我想这可能是介绍
+    <h2 class="h2">南浦大桥</h2>
+    <p>31°12′26″N 121°30′04″E﻿ / ﻿31.2072°N 121.5011°E<br/>曾经为世界第三大叠合梁斜拉桥。大桥跨越黄浦江连接黄浦区与浦东新区，是上海市内环线的重要组成部分，也是开发浦东的起步工程之一。 </p>
 </div>
 
 
 <div id="introduce" class="content">
     <div id="introduceContent">
         <div class="introduceContent" id="introducePhoto">
-            Text
-            <img src="./img/1.jpg" id="introducePhotoImg">
+            图,晴天的南浦大桥
+            <img src="./img/longPicture.jpg" id="introducePhotoImg">
         </div>
         <div class="introduceContent"  id="introduceText">
             <br/>
-            三角座是北天小星座。三角座为古巴比伦人和希腊人熟知，是2世纪天文学家克劳狄乌斯·托勒密列出的48个星座之一。天体制图师约翰·拜耳和约翰·佛兰斯蒂德为星座恒星编目，并用拜耳命名法为其中六颗星命名。天大将军九和天大将军十分别是3.0和4.0视星等的白色恒星，与3.41视星等的黄白色恒星娄宿增六组成三角型。三角座ι是有名的双星系统，星系内还有三个恒星系统确知存在行星。
+            原名南码头黄浦江大桥，位于中国上海市黄浦区董家渡，是上海市第二座、同时也是中心城区第一座跨越黄浦江的大桥。因该桥西端位于南码头（今属黄浦区），故名。南浦大桥架于浦西陆家浜路与浦东南码头之间，
         </div>
     </div>
 <!-- 这里文本需要js -->
@@ -77,8 +78,8 @@
 
 
 <div  class="textP">
-    <h2>分隔符</h2>
-    <br/>一些东西........<br/>emmm,我想这可能是介绍
+    <h2 class="h2">分隔符</h2>
+    <p>一些东西........<br/>emmm,我想这可能是介绍</p>
 </div>
 
 
@@ -104,7 +105,7 @@
     </tr>
 </table>
 
-<div afterContent><br/></div>
+<div id="afterContent"><br/></div>
 
 
 <div id="bottom">
@@ -114,7 +115,7 @@
 </div>
 </body>
 <script>
-    test();
+    test(true);
     //getViewElement();
 </script>
 </html>
