@@ -75,8 +75,9 @@ iframe{
     height: max-content;
 }
 #introduceContent{
-    width: 100%;
+    width: 90%;
     height: max-content;
+    padding: 5%;
 }
 .introduceContent{
     width: auto;
@@ -107,4 +108,11 @@ iframe{
     text-align: center;
     padding-bottom: 200px;
     background-color: darkgray;
+}
+.h2{
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+#afterContent{
+    margin-bottom: 200px;
 }
