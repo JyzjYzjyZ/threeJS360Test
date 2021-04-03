@@ -11,6 +11,20 @@
 
 <body class="htmlBody">
 <div id="contentWidthForJs" class="content"></div>
+
+
+
+
+<div>
+    <ul id='guide'>
+        <li><a href="">Home</a></li>
+        <li><a href="">Link</a></li>
+        <li><a href="">Link</a></li>
+        <li><a href="">Link</a></li>
+        <li><a href="">Link</a></li>
+        <li style="float: right;"><div><a href="" id="guideLiAAbout">About</a></div></li>
+    </ul>
+</div>
 <h1 class="head">Welcome to my web</h1>
 
 <div id="homPageMainView" class="view"></div>
@@ -23,21 +37,21 @@
 <div class="content" id="fold">
     <div class="foldContent"  id="foldContentLeft">
         1<br/>
-        <div id="foldViewLeft" class="foldView, view"></div>
+        <div id="foldViewLeft" class=" foldView, view"></div>
     </div>
 
 
 
     <div class="foldContent"  id="foldContentCentre">
         2<br/>
-        <div id="foldViewCentre" class="foldView, view"></div>
+        <div id="foldViewCentre" class=" foldView, view"></div>
     </div>
 
 <!-- 这里框架需要js -->
 
     <div class="foldContent" id="foldContentRight" >
         3<br/>
-        <div  id="foldViewRight" class="foldView, view">
+        <div  id="foldViewRight" class=" foldView, view">
         </div>
     </div>
 </div>
@@ -55,7 +69,8 @@
 
 <div  class="textP">
     <h2 class="h2">南浦大桥</h2>
-    <p>31°12′26″N 121°30′04″E﻿ / ﻿31.2072°N 121.5011°E<br/>曾经为世界第三大叠合梁斜拉桥。大桥跨越黄浦江连接黄浦区与浦东新区，是上海市内环线的重要组成部分，也是开发浦东的起步工程之一。 </p>
+    <p>31°12′26″N 121°30′04″E﻿ / ﻿31.2072°N 121.5011°E</p>
+    <p style="width: calc(100%/3.5);margin: auto">曾经为世界第三大叠合梁斜拉桥。大桥跨越黄浦江连接黄浦区与浦东新区，是上海市内环线的重要组成部分，也是开发浦东的起步工程之一。 </p>
 </div>
 
 
@@ -82,8 +97,57 @@
     <p>一些东西........<br/>emmm,我想这可能是介绍</p>
 </div>
 
+<div class="content">
+    <div class="row">
+        <div class="column">
+            <img src="./img/1.jpg" class="tablePhotoImg">
+        </div>
+
+        <div class="column">
+            <img src="./img/1.jpg" class="tablePhotoImg">
+        </div>
+
+        <div class="column">
+            <img src="./img/1.jpg" class="tablePhotoImg">
+        </div>
+        <div class="column">
+            <img src="./img/1.jpg" class="tablePhotoImg">
+        </div>
 
 
+        <div class="column">
+            <img src="./img/1.jpg" class="tablePhotoImg">
+        </div>
+
+        <div class="column">
+            <img src="./img/1.jpg" class="tablePhotoImg">
+        </div>
+
+        <div class="column">
+            <img src="./img/1.jpg" class="tablePhotoImg">
+        </div>
+        <div class="column">
+            <img src="./img/1.jpg" class="tablePhotoImg">
+        </div>
+
+        <!--
+        <div class="column">
+            <img src="./img/1.jpg" class="tablePhotoImg">
+        </div>
+
+        <div class="column">
+            <img src="./img/1.jpg" class="tablePhotoImg">
+        </div>
+        <div class="column">
+            <img src="./img/1.jpg" class="tablePhotoImg">
+        </div>
+        <div class="column">
+            <img src="./img/1.jpg" class="tablePhotoImg">
+        </div>
+        -->
+    </div>
+</div>
+<!--
 <table class="content">
     <tr>
         <td class="tableFirst"><img src="./img/1.jpg" class="tablePhotoImg"></td>
@@ -104,14 +168,18 @@
         <td><img src="./img/1.jpg" class="tablePhotoImg"></td>
     </tr>
 </table>
+-->
 
 <div id="afterContent"><br/></div>
 
 
-<div id="bottom">
-    使用引擎:three.js
-    &nbsp&nbsp&nbsp&nbsp
-    使用360View框架:<a href="https://github.com/NorikDavtian/ThreeJS-360-Panorama">ThreeJS-360-Panorama</a>
+<div id="bottom"><br/>
+    <p>使用引擎:three.js
+    &nbsp&nbsp&nbsp&nbsp</p>
+
+    <p>使用360View框架:<a href="https://github.com/NorikDavtian/ThreeJS-360-Panorama">ThreeJS-360-Panorama</a></p>
+    <p>我的<a href="https://jyzjyzjyz.github.io/threeJS360Test/">Github<b>网站</b>源码</a></p>
+    <p>update:v1.0.0.2</p>
 </div>
 </body>
 <script>
