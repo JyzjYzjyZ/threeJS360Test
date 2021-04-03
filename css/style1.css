@@ -7,7 +7,8 @@
     z-index: 100;
     position: absolute;
     width: 100%;
-    color: azure;
+    color: black;
+    margin-top: 60px;
 }
 .view{
     overflow: hidden;
@@ -38,6 +39,7 @@ iframe{
     margin: auto;
     width: calc(100% - 360px);
     height: auto;
+    padding: 0px;
 }
 #fold{
     padding: 5px
@@ -72,12 +74,15 @@ iframe{
 }
 
 #introduce{
-    height: max-content;
+    padding: 0px;/*>*/
+    display: block;
+}
+#introduce:after{
+    clear: both;
 }
 #introduceContent{
-    width: 90%;
     height: max-content;
-    padding: 5%;
+    margin: auto;
 }
 .introduceContent{
     width: auto;
@@ -95,8 +100,7 @@ iframe{
     width: calc( 100% - (200%/3) );
 }
 .tablePhotoImg{
-    width: calc(100% - 10px);
-    margin-left: 10px;
+    width: 100%;
 }
 .tableFirst{
     margin: 0;
@@ -116,3 +120,90 @@ iframe{
 #afterContent{
     margin-bottom: 200px;
 }
+a{
+    text-decoration:none;
+    color: aqua;
+}
+
+#guide{
+    list-style-type: none;
+    margin: 0;
+    z-index: 99999;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    width: 100%;
+
+    top: 0;
+    padding: 20px 0 12px;
+
+}
+#guide>li{
+    display: inline;
+    float: left;
+}
+#guide>li>a:hover{
+    background-color: #ddd;
+    color: black;
+}
+#guide>li>a{
+    padding: 20px 15px 12px 15px;
+    color: white;
+}
+#guide>li>div{}
+#guideLiAAbout{
+    background-color: aquamarine;
+    padding: 20px 15px 12px 15px;
+    color: bisque;
+}
+#guideLiAAbout:hover{
+    background-color: bisque;
+    color: aquamarine;
+}
+/*===========================*/
+.column {
+    float: left;
+    width: calc(100%/4);
+    padding: 0;
+    margin: 0;
+}
+.row{
+    line-height: 0px;
+    margin: 0;
+    padding: 0px;/*>*/
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    line-height: normal;
+}
+@media screen and (max-width:1500px) and (min-width:800px) {
+    .column {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 800px){
+    .column {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
+@media screen and (min-width: 1920px){
+    .content{
+        margin: auto;
+        width: calc(100% - 800px);
+        height: auto;
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .content{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    .introduceContent{
+        width: 100%;
+    }
+}
+
